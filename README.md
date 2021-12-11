@@ -59,23 +59,23 @@ Must run in neovim
 ```
 
 
-- Setup nvim-lspconfig (Language Server)
+### Setup nvim-lspconfig (Language Server)
 
 Reference : [nvim-lsconfig](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md)
 
-    - Javascript & Typescript (tsserver)
-    ```bash
-    npm install -g typescript typescript-language-server
-    ```
+- Javascript & Typescript (tsserver)
+```bash
+npm install -g typescript typescript-language-server
+```
 
-    - RUST (rls)
-    ```bash
-    rustup component add rls rust-analysis rust-src
-    ```
+- RUST (rls)
+```bash
+rustup component add rls rust-analysis rust-src
+```
 
-    - GoLang (golangci_lint_ls, gopls)
-    ```bash
-    go install github.com/nametake/golangci-lint-langserver@latest
-    go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.42.1
-    go install golang.org/x/tools/gopls@latest
-    ```
+- GoLang (golangci_lint_ls, gopls)
+```bash
+go install github.com/nametake/golangci-lint-langserver@latest
+go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.42.1
+go install golang.org/x/tools/gopls@latest
+```
