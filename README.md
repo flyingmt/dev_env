@@ -43,6 +43,22 @@ Default file location : ~/AppData/Local/nvim/init.vim
 My [init.vim](init.vim)
 
 
+- Install vim-plug for neovim plugin management (https://github.com/junegunn/vim-plug)
+```bash
+iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
+    ni "$(@($env:XDG_DATA_HOME, $env:LOCALAPPDATA)[$null -eq $env:XDG_DATA_HOME])/nvim-data/site/autoload/plug.vim" -Force
+
+```
+
+
+- Install plugs in neovim
+
+Must run in neovim
+```bash
+:PlugInstall
+```
+
+
 - Setup nvim-lspconfig (Language Server)
 
 Reference : [nvim-lsconfig](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md)
