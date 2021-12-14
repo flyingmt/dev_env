@@ -1,7 +1,28 @@
-## My neovim settings for windows / powershell & for developement
+## My development settings for windows / powershell / neovim
+
+
+### Fonts to install
+
+- Coding Font : D2Coding ligature (https://github.com/naver/d2codingfont)
+    - Visual Studio Code Font, must activate Ligature
+
+- Terminal Font : Caskaydia Cove Nerd Font (https://www.nerdfonts.com/font-downloads)
+    - Direct Download (Link)[https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip]
+    - Set the Termainl Font to this
 
 
 ### Programs to install
+
+- Install powershell (From Windows Store)
+
+- Install Window Terminal (From Windows Store)
+    - Set powershell to default
+
+- Install OhMyPost (using winget)
+
+```bash
+winget install  JanDeDobbeleer.OhMyPosh
+```
 
 - Install chocolatey (https://chocolatey.org/install)
 
@@ -33,6 +54,27 @@ choco install rustup.install
 ```
 choco install golang
 ```
+
+### Setup powershell
+
+- Install Ternminal-Icons
+
+```bash
+Install-Module -Name Terminal-Icons -Repository PSGallery
+```
+
+- Install PSReadLine
+
+```bash
+Install-Module PSReadLine -RequiredVersion 2.2.0-beta4 -AllowPrerelease
+```
+
+- Install z
+
+```bash
+Install-Module z -AllowClobber
+```
+
 
 ### Setup neovim
 
