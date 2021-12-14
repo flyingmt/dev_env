@@ -17,6 +17,8 @@
 
 - Install Window Terminal (From Windows Store)
     - Set powershell to default
+    - Set Font to Caskaydia Cove Nerd Font
+    - Set Background Transparent
 
 - Install Git (using winget)
 
