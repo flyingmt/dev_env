@@ -110,7 +110,7 @@ Install-Module z -Force
 - Install Fzf 
 
 ```bash
-Install-Modele -Name PSFzf -Scope CurrentUser -Force
+Install-Module -Name PSFzf -Scope CurrentUser -Force
 ```
 
 ### Setup neovim
