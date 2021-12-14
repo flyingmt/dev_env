@@ -157,3 +157,8 @@ go install github.com/nametake/golangci-lint-langserver@latest
 go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.42.1
 go install golang.org/x/tools/gopls@latest
 ```
+
+- CSharp (csharp_ls)
+```bash
+dotnet tool install --global csharp-ls
+```
