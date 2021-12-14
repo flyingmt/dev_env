@@ -7,7 +7,7 @@
     - Visual Studio Code Font, must activate Ligature
 
 - Terminal Font : Caskaydia Cove Nerd Font (https://www.nerdfonts.com/font-downloads)
-    - Direct Download (Link)[https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip]
+    - Direct Download [Link](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip)
     - Set the Termainl Font to this
 
 
@@ -17,6 +17,12 @@
 
 - Install Window Terminal (From Windows Store)
     - Set powershell to default
+
+- Install Git (using winget)
+
+```bash
+winget install -e --id Git.Git
+```
 
 - Install OhMyPost (using winget)
 
@@ -29,6 +35,11 @@ winget install  JanDeDobbeleer.OhMyPosh
 Run powershell with Administrator 
 ```bash
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+
+- Inatll Fxf (Fuzzy finder)
+```bash
+choco install fzf
 ```
 
 - Install neovim using chocolatey
@@ -57,24 +68,48 @@ choco install golang
 
 ### Setup powershell
 
+- Make profile file for powershell (Microsoft.PowerShell_profile.ps1)
+
+Default file location and filename : echo $PROFILE
+
+My [Microsoft.PowerShell_profile.ps1](Microsoft.PowerShell_profile.ps1)
+
+- Install Oh My Posh (Prompt theme engine)
+
+```bash
+Install-Module posh-git -Scope CurrentUser -Force
+Install-Module oh-my-posh -Scope CurrentUser -Force
+```
+
+- Customize prompt (Path) (my.omp.json)
+
+Default file location : Same as Microsoft.PowerShell_profile.ps1
+
+My [my.omp.json](my.omp.json)
+
 - Install Ternminal-Icons
 
 ```bash
-Install-Module -Name Terminal-Icons -Repository PSGallery
+Install-Module -Name Terminal-Icons -Repository PSGallery -Force
 ```
 
 - Install PSReadLine
 
 ```bash
-Install-Module PSReadLine -RequiredVersion 2.2.0-beta4 -AllowPrerelease
+Install-Module PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublisherCheck
 ```
 
 - Install z
 
 ```bash
-Install-Module z -AllowClobber
+Install-Module z -Force
 ```
 
+- Install Fzf 
+
+```bash
+Install-Modele -Name PSFzf -Scope CurrentUser -Force
+```
 
 ### Setup neovim
 
@@ -91,7 +126,6 @@ iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
     ni "$(@($env:XDG_DATA_HOME, $env:LOCALAPPDATA)[$null -eq $env:XDG_DATA_HOME])/nvim-data/site/autoload/plug.vim" -Force
 
 ```
-
 
 - Install plugs in neovim
 
