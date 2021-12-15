@@ -34,7 +34,7 @@ winget install  JanDeDobbeleer.OhMyPosh
 
 - Install chocolatey (https://chocolatey.org/install)
 
-Run powershell with Administrator 
+    Run powershell with Administrator 
 ```bash
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
@@ -72,9 +72,9 @@ choco install golang
 
 - Make profile file for powershell (Microsoft.PowerShell_profile.ps1)
 
-Default file location and filename : echo $PROFILE
+    Default file location and filename : echo $PROFILE
 
-My [Microsoft.PowerShell_profile.ps1](Microsoft.PowerShell_profile.ps1)
+    My [Microsoft.PowerShell_profile.ps1](Microsoft.PowerShell_profile.ps1)
 
 - Install Oh My Posh (Prompt theme engine)
 
@@ -85,9 +85,9 @@ Install-Module oh-my-posh -Scope CurrentUser -Force
 
 - Customize prompt (Path) (my.omp.json)
 
-Default file location : Same as Microsoft.PowerShell_profile.ps1
+    Default file location : Same as Microsoft.PowerShell_profile.ps1
 
-My [my.omp.json](my.omp.json)
+    My [my.omp.json](my.omp.json)
 
 - Install Ternminal-Icons
 
@@ -117,9 +117,9 @@ Install-Module -Name PSFzf -Scope CurrentUser -Force
 
 - Make setup file for neovim (init.vim)
 
-Default file location : ~/AppData/Local/nvim/init.vim
+    Default file location : ~/AppData/Local/nvim/init.vim
 
-My [init.vim](init.vim)
+    My [init.vim](init.vim)
 
 
 - Install vim-plug for neovim plugin management (https://github.com/junegunn/vim-plug)
@@ -131,7 +131,7 @@ iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
 
 - Install plugs in neovim
 
-Must run in neovim
+    Must run in neovim
 ```bash
 :PlugInstall
 ```
@@ -162,3 +162,5 @@ go install golang.org/x/tools/gopls@latest
 ```bash
 dotnet tool install --global csharp-ls
 ```
+
+
