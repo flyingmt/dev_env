@@ -61,7 +61,10 @@ call plug#begin()
  Plug 'akinsho/toggleterm.nvim'
  "Plug 'glepnir/lspsaga.nvim'
 
-call plug#end()
+ " Markdown Preview (:MarkdownPreview, :MarkdownPreviewStop)
+ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+
+ call plug#end()
 
 set encoding=UTF-8
 
