@@ -44,6 +44,10 @@ call plug#begin()
  Plug 'ryanoasis/vim-devicons'  	" Developer Icons
  Plug 'scrooloose/nerdtree'			" A file explorer for neovim	
  Plug 'preservim/nerdcommenter'		" An easy way for commenting out lines
+ 
+ Plug 'nvim-lua/plenary.nvim' " Telescope
+ Plug 'nvim-telescope/telescope.nvim' " Telescope
+
 
  "Plug 'SirVer/ultisnips'			" Snippets engine
  "Plug 'honza/vim-snippets'			" A collection of snippets
@@ -78,6 +82,13 @@ call plug#begin()
  Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 
  call plug#end()
+
+" Find files using Telescope command-line sugar.
+nnoremap ff :Telescope find_files<cr>
+nnoremap fg :Telescope live_grep<cr>
+nnoremap fb :Telescope buffers<cr>
+nnoremap fh :Telescope help_tags<cr>
+
 
 " Nerd Tree
 nnoremap <C-f> :NERDTreeFocus<CR>
